@@ -1,7 +1,7 @@
 export * from '../index'
 export * from '../canvas'
 
-import { WebGLRenderer, WebGL1Renderer } from 'three'
+import { WebGLRenderer } from 'three'
 import * as React from 'react'
 import { ResizeContainer, ContainerProps } from './shared/web/ResizeContainer'
 
@@ -11,7 +11,7 @@ const canvasStyle = { display: 'block' }
 
 function CanvasComponent({ children, ...props }: ContainerProps) {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null)
-  const Renderer = React.useMemo(() => (props.webgl1 ? WebGL1Renderer : WebGLRenderer), [props.webgl1])
+  const Renderer = React.useMemo(() => (props.webgl1 ? WebGLRenderer : WebGLRenderer), [props.webgl1])
 
   const renderer = React.useCallback(
     function callback() {

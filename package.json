@@ -1,7 +1,7 @@
 {
-  "name": "react-three-fiber",
+  "name": "react-three-fiber-zeg",
   "private": true,
-  "version": "5.3.4",
+  "version": "5.3.6",
   "description": "A React renderer for Three.js (web and react-native)",
   "keywords": [
     "react",
